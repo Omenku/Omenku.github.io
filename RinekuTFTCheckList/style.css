@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(0, 29, 0);
+}
+.btn-clear{
+    background-color: rgb(0, 121, 0);
+    transition: background-color 0.3s ease;
+}
+.btn-clear:hover{
+    background-color: rgb(2, 97, 2);
+}
+.card {
+    position: relative;
+    border: none;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    cursor: pointer; 
+    background-color: rgb(0, 121, 0);
+}
+.card-body{
+    min-height: 5rem;
+    max-height: 5rem;
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: x-large;
+}
+.card:hover{
+    background-color: rgb(221, 151, 0);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    font-size: 180px;
+    font-weight: bolder;
+    color: red;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-text.active {
+    opacity: 1;
+}
+.active-bg {
+    background-color: rgb(175, 29, 29) !important;
+}
+
+.mix-2, .mix-3{
+    padding-bottom: 5%;
+}
+
+.mix-2 img{
+    width: 50%;
+}
+.mix-3 img{
+    width: 48%;
+}
