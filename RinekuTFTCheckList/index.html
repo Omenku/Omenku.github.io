@@ -1,158 +1,290 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>RinekuCheckList</title>
 </head>
+
 <body>
-    <div>
 
+    <div class="banner text-center py-5">
+        <h1>RINEKU CHECKLIST</h1>
     </div>
-    <div class="container pt-5 pb-5">
 
-        <div class="pb-4">
-            <button type="button" class="btn btn-lg btn-clear" onclick="toggleAll()">Clear All</button>
-        </div>    
-
-        <div class="row row-cols-1 row-cols-md-5 g-5 text-center">
-            <div class="col">
-                <div class="card" onclick="toggleOverlay(this)">
-                    <div class="card-body">
-                        <h2 class="card-title">Dragonlord Kaisa</h2>                       
-                    </div>     
-                    <div class="fluid-container mix-2">
-                        <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/Kaisa.png">
-                        <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/Diana.png">
-                    </div>                             
-                    <span class="overlay-text">X</span>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" onclick="toggleOverlay(this)">
-                    <div class="card-body">
-                        <h2 class="card-title">Duelist</h2>                       
-                    </div>     
-                    <div class="fluid-container mix-3">
-                        <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/Tristana.png">
-                        <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/Volibear.png">
-                        <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/LeeSin.png">
-                    </div>                             
-                    <span class="overlay-text">X</span>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" onclick="toggleOverlay(this)">
-                    <div class="card-body">
-                        <h2 class="card-title">Fated Dryad</h2>                       
-                    </div>     
-                    <div class="fluid-container mix-2">
-                        <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/Syndra.png">
-                        <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/Ornn.png">
-                    </div>                             
-                    <span class="overlay-text">X</span>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" onclick="toggleOverlay(this)">
-                    <div class="card-body">
-                        <h2 class="card-title">Heavenly</h2>                       
-                    </div>     
-                    <div class="fluid-container mix-2">
-                        <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/LeeSin.png">
-                        <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/Kayn.png">
-                    </div>                             
-                    <span class="overlay-text">X</span>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" onclick="toggleOverlay(this)">
-                    <div class="card-body">
-                        <h2 class="card-title">Sage Bruiser</h2>                       
-                    </div>     
-                    <div class="fluid-container mix-2">
-                        <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/Sylas.png">
-                        <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/Morgana.png">
-                    </div>                             
-                    <span class="overlay-text">X</span>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" onclick="toggleOverlay(this)">
-                    <div class="card-body">
-                        <h2 class="card-title">Senna Reroll</h2>                       
-                    </div>     
-                    <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/Senna.png">                        
-                    <span class="overlay-text">X</span>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" onclick="toggleOverlay(this)">
-                    <div class="card-body">
-                        <h2 class="card-title">Storyweaver Bard/TahmKench</h2>                       
-                    </div>     
-                    <div class="fluid-container mix-2">
-                        <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/Bard.png">
-                        <img class="card-img-bottom" src="https://rerollcdn.com/characters/Skin/11/TahmKench.png">
-                    </div>                             
-                    <span class="overlay-text">X</span>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" onclick="toggleOverlay(this)">
-                    <div class="card-body">
-                        <h2 class="card-title">Porcelana Sniper</h2>
-                    </div>
-                    <div class="fluid-container mix-2">
-                        <img src="https://rerollcdn.com/characters/Skin/11/Ashe.png" class="card-img-bottom">
-                        <img src="https://rerollcdn.com/characters/Skin/11/Aphelios.png" class="card-img-bottom">
-                    </div> 
-                    <span class="overlay-text">X</span>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" onclick="toggleOverlay(this)">
-                    <div class="card-body">
-                        <h2 class="card-title">Porcelana Invoker</h2>
-                    </div>
-                    <div class="fluid-container mix-3">
-                        <img src="https://rerollcdn.com/characters/Skin/11/Annie.png" class="card-img-bottom">
-                        <img src="https://rerollcdn.com/characters/Skin/11/Ashe.png" class="card-img-bottom">
-                        <img src="https://rerollcdn.com/characters/Skin/11/Lillia.png" class="card-img-bottom">
-                    </div> 
-                    <span class="overlay-text">X</span>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" onclick="toggleOverlay(this)">
-                    <div class="card-body">
-                        <h2 class="card-title">Porcelana Arcanist</h2>
-                    </div>
-                    <div class="fluid-container mix-2">
-                        <img src="https://rerollcdn.com/characters/Skin/11/Illaoi.png" class="card-img-bottom">
-                        <img src="https://rerollcdn.com/characters/Skin/11/Syndra.png" class="card-img-bottom">
-                    </div> 
-                    <span class="overlay-text">X</span>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" onclick="toggleOverlay(this)">
-                    <div class="card-body">
-                        <h2 class="card-title">Trickshot</h2>
-                    </div>
-                    <div class="fluid-container mix-2">
-                        <img src="https://rerollcdn.com/characters/Skin/11/Kaisa.png" class="card-img-bottom">
-                        <img src="https://rerollcdn.com/characters/Skin/11/Galio.png" class="card-img-bottom">
-                    </div>                   
-                    <span class="overlay-text">X</span>
-                </div>
-            </div>
-            
-            <!-- Additional cards go here Botón Hematología Analítica-->
+    <div class="text-center">
+        <div class="pb-3">
+            <button type="button" class="btn btn-clear" onclick="toggleAll()">Clear All</button>
         </div>
-    </div>    
+    </div>
+
+    <div class="container pb-5">
+
+        <div class="row">
+
+            <div class="col-auto Tier">
+                <p style="color: red;">S</p>
+            </div>
+
+            <div class="col">
+                <div class="d-flex text-center flex-wrap p-2" style="border: solid red; gap: 1.5%;">
+
+                    <!--Syndra Vanguards-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Syndra Vanguards</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Syndra.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://rerollcdn.com/items/VanguardEmblem.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Syndra Preserver-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Syndra Preserver</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Syndra.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://rerollcdn.com/items/PreserverEmblem.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Syndra Shapeshifter-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Syndra Shapeshifter</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Syndra.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://rerollcdn.com/items/ShapeshifterEmblem.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Preserver Karma-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Preserver Karma</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Karma.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://rerollcdn.com/items/WitchcraftEmblem.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Multistriker Kassadin-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Multistriker Kassadin</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Kassadin.png"
+                                    class="imgSize_regular card-img-bottom">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--KogMaw-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">KogMaw</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/KogMaw.png"
+                                    class="imgSize_regular card-img-bottom">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Nunu Augment-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Nunu</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Nunu.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://cdn.metatft.com/cdn-cgi/image/width=46,height=46,format=auto/https://cdn.metatft.com/file/metatft/augments/sweettooth_ii.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Build Different-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Build Different</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Nasus.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://cdn.metatft.com/cdn-cgi/image/width=46,height=46,format=auto/https://cdn.metatft.com/file/metatft/augments/builtdifferent2.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Multistriker Kalista-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Multistriker Kalista</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Kalista.png"
+                                    class="imgSize_regular card-img-bottom">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-3">
+            <div class="col-auto Tier">
+                <p style="color: orange;">A</p>
+            </div>
+            <div class="col">
+                <div class="d-flex text-center flex-wrap p-2" style="border: solid orange; gap: 1.5%;">
+
+                    <!--Eldritch-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Eldritch</h2>
+                            <div class="imgCenter">
+                                <img src="https://tftacademy.com/_app/immutable/assets/TFT12_EldritchBigVolibear.CVtR_NTO.webp" class="imgSize_regular card-img-bottom">
+                                <img src="https://rerollcdn.com/items/EldritchEmblem.png" class="miniPhoto">
+
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Chrono Karma-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Chrono <br/> Karma</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Karma.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://rerollcdn.com/items/ChronoEmblem.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Zoe Reroll-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Zoe <br/> Reroll</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Zoe.png"
+                                    class="imgSize_regular card-img-bottom">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Sugarcraft-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Sugarcraft</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Gwen.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://rerollcdn.com/items/SugarcraftEmblem.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Zap Attack-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Zap Attack</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Blitzcrank.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://cdn.metatft.com/cdn-cgi/image/width=46,height=46,format=auto/https://cdn.metatft.com/file/metatft/augments/zapattack_ii.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Pyro Nilah-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Sugarcraft</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Nilah.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://rerollcdn.com/items/PyroEmblem.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Deja vu Galio-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Deja Vu Galio</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Galio.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://cdn.metatft.com/cdn-cgi/image/width=46,height=46,format=auto/https://cdn.metatft.com/file/metatft/augments/dejavu_ii.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Spider Queen Elise-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Spider Queen Elise</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Elise.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://cdn.metatft.com/cdn-cgi/image/width=46,height=46,format=auto/https://cdn.metatft.com/file/metatft/augments/spiderqueen_ii.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+                    <!--Portal-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">10 Portal</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Taric.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://rerollcdn.com/items/PortalEmblem.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 <script src="script.js"></script>
+
 </html>

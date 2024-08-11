@@ -1,13 +1,20 @@
 body{
-    background-color: rgb(0, 29, 0);
+    background-color: rgb(0, 15, 0);
 }
-.btn-clear{
-    background-color: rgb(0, 121, 0);
-    transition: background-color 0.3s ease;
+
+
+
+/*BANNER*/
+.banner{
+    color: green;
+    font-weight: bolder;
 }
-.btn-clear:hover{
-    background-color: rgb(2, 97, 2);
-}
+
+
+
+
+
+/* CARDS */
 .card {
     position: relative;
     border: none;
@@ -15,26 +22,69 @@ body{
     overflow: hidden;
     cursor: pointer; 
     background-color: rgb(0, 121, 0);
+    width: 12%;
+    height: 10%;
+    margin-bottom: 1%;
 }
 .card-body{
-    min-height: 5rem;
-    max-height: 5rem;
+    padding: 5% 0;
 }
 
 .card-title{
     font-weight: bold;
-    font-size: x-large;
+    font-size: large;
+    min-height: 7vh !important;
 }
 .card:hover{
     background-color: rgb(221, 151, 0);
 }
 
+
+
+
+/* PHOTOS */
+.imgSize_regular{
+    width: 90%;
+}
+.imgCenter{
+    justify-content: center;
+}
+.miniPhoto{
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+
+
+/* BUTTONS */
+.btn-clear{
+    background-color: rgb(0, 121, 0);
+    width: 20%;
+    height: 10%;
+    font-weight: bold;
+    font-size: x-large;
+    transition: background-color 0.3s ease;
+}
+.btn-clear:hover{
+    background-color: rgb(2, 97, 2);
+}
+
+
+
+
+/* OVERLAY X */
 .overlay-text {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -35%);
-    font-size: 180px;
+    font-size: 120px;
     font-weight: bolder;
     color: red;
     opacity: 0;
@@ -49,13 +99,13 @@ body{
     background-color: rgb(175, 29, 29) !important;
 }
 
-.mix-2, .mix-3{
-    padding-bottom: 5%;
+
+
+
+
+.Tier{
+    font-size: 80px;
+    font-weight: bold;
+    max-width: 5.5vw;
 }
 
-.mix-2 img{
-    width: 50%;
-}
-.mix-3 img{
-    width: 48%;
-}
