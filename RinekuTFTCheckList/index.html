@@ -17,19 +17,20 @@
 
     <div class="text-center">
         <div class="pb-3">
-            <button type="button" class="btn btn-clear" onclick="toggleAll()">Clear All</button>
+            <button type="button" class="btn btn-clear" style="color: black;" onclick="toggleAll()">Clear All</button>
         </div>
     </div>
 
-    <div class="container pb-5">
+    <div class="fluid-container all-container pb-5 px-5 ">
 
-        <div class="row">
+        <div class="row justify-content-center">
                                             <!---------- TIER S ---------->
             <div class="col-auto Tier">
                 <p style="color: red;">S</p>
             </div>
             <div class="col">
-                <div class="d-flex text-center flex-wrap p-2" style="border: solid red; gap: 1.5%;">
+                <div class="d-flex text-center flex-wrap p-2" style="border: solid red; 
+                gap: 1.5%;">
 
                     <!--Scholar Ahri Zoe-->
                     <div class="card" onclick="toggleOverlay(this)">
@@ -81,7 +82,32 @@
                             </div>
                         </div>
                         <span class="overlay-text">X</span>
-                    </div>      
+                    </div>
+
+                    <!--Veigar-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Veigar</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Veigar.png"
+                                    class="imgSize_regular card-img-bottom">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
+                    
+                    <!--Arcana Ryze-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Arcana<br/>Ryze</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Ryze.png"
+                                    class="imgSize_regular card-img-bottom">
+                                <img src="https://rerollcdn.com/items/ArcanaEmblem.png" class="miniPhoto">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
                     
                     <!--Frost-->
                     <div class="card" onclick="toggleOverlay(this)">
@@ -111,18 +137,7 @@
                         <span class="overlay-text">X</span>
                     </div>                                 
                     
-                    <!--Arcana Ryze-->
-                    <div class="card" onclick="toggleOverlay(this)">
-                        <div class="card-body">
-                            <h2 class="card-title">Arcana<br/>Ryze</h2>
-                            <div class="imgCenter">
-                                <img src="https://rerollcdn.com/characters/Skin/12/Ryze.png"
-                                    class="imgSize_regular card-img-bottom">
-                                <img src="https://rerollcdn.com/items/ArcanaEmblem.png" class="miniPhoto">
-                            </div>
-                        </div>
-                        <span class="overlay-text">X</span>
-                    </div>
+                    
 
                 </div>
             </div>
@@ -175,18 +190,6 @@
                         <span class="overlay-text">X</span>
                     </div>
 
-                    <!--Preserver Karma-->
-                    <div class="card" onclick="toggleOverlay(this)">
-                        <div class="card-body">
-                            <h2 class="card-title">Preserver Karma</h2>
-                            <div class="imgCenter">
-                                <img src="https://rerollcdn.com/characters/Skin/12/Karma.png"
-                                    class="imgSize_regular card-img-bottom">
-                            </div>
-                        </div>
-                        <span class="overlay-text">X</span>
-                    </div>
-
                     <!--Nunu Augment-->
                     <div class="card" onclick="toggleOverlay(this)">
                         <div class="card-body">
@@ -213,15 +216,14 @@
                         <span class="overlay-text">X</span>
                     </div>
 
-                    
-
-                    <!--Veigar-->
+                    <!--Warrior reroll-->
                     <div class="card" onclick="toggleOverlay(this)">
                         <div class="card-body">
-                            <h2 class="card-title">Veigar</h2>
+                            <h2 class="card-title">Warrior<br/>Reroll</h2>
                             <div class="imgCenter">
-                                <img src="https://rerollcdn.com/characters/Skin/12/Veigar.png"
+                                <img src="https://rerollcdn.com/characters/Skin/12/Katarina.png"
                                     class="imgSize_regular card-img-bottom">
+                                <img src="https://rerollcdn.com/items/WarriorEmblem.png" class="miniPhoto">
                             </div>
                         </div>
                         <span class="overlay-text">X</span>
@@ -240,8 +242,18 @@
                         <span class="overlay-text">X</span>
                     </div>
 
+                    <!--Preserver Karma-->
+                    <div class="card" onclick="toggleOverlay(this)">
+                        <div class="card-body">
+                            <h2 class="card-title">Preserver Karma</h2>
+                            <div class="imgCenter">
+                                <img src="https://rerollcdn.com/characters/Skin/12/Karma.png"
+                                    class="imgSize_regular card-img-bottom">
+                            </div>
+                        </div>
+                        <span class="overlay-text">X</span>
+                    </div>
                     
-
                 </div>
             </div>
         </div>
@@ -271,18 +283,7 @@
                         <span class="overlay-text">X</span>
                     </div>
 
-                    <!--Warrior reroll-->
-                    <div class="card" onclick="toggleOverlay(this)">
-                        <div class="card-body">
-                            <h2 class="card-title">Warrior<br/>Reroll</h2>
-                            <div class="imgCenter">
-                                <img src="https://rerollcdn.com/characters/Skin/12/Katarina.png"
-                                    class="imgSize_regular card-img-bottom">
-                                <img src="https://rerollcdn.com/items/WarriorEmblem.png" class="miniPhoto">
-                            </div>
-                        </div>
-                        <span class="overlay-text">X</span>
-                    </div>
+                    
 
                     <!--Multistriker Kassadin-->
                     <div class="card" onclick="toggleOverlay(this)">
